@@ -13,7 +13,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve('dist'),
+    path: path.resolve('/dist'),
     filename: 'bundle.[hash].js'
   },
   devtool: 'inline-source-map',
@@ -50,7 +50,7 @@ module.exports = {
   plugins: [
     htmlWebpackPlugin
   ],
-  devserver: {
+  devServer: {
     host: 'localhost',
     port: PORT,
     historyApiFallback: true,
