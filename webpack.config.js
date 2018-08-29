@@ -13,7 +13,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve('/dist'),
+    path: path.join(__dirname, '/dist'),
     filename: 'bundle.[hash].js'
   },
   devtool: 'inline-source-map',
